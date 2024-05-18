@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: cryptodvala-exchange-service
+  profiles:
+    active: ${ACTIVE_PROFILE}:dev
+  boot:
+    admin:
+      client:
+        url: ${ADMIN_URL}

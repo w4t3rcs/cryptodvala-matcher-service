@@ -1,0 +1,19 @@
+spring:
+  cache:
+    type: redis
+    redis:
+      cache-null-values: false
+      enable-statistics: true
+  r2dbc:
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
+management:
+  endpoints:
+    web:
+      base-path: ${ACTUATOR_URL}
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
