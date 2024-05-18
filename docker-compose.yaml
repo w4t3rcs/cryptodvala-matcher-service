@@ -6,7 +6,7 @@ services:
   app:
     build:
       context: .
-    container_name: cryptodvala-exchange-service
+    container_name: cryptodvala-matcher-service
     depends_on:
       - postgresql
       - redis
@@ -15,7 +15,7 @@ services:
   postgresql:
     image: postgres
     restart: always
-    container_name: cryptodvala-postgresql-exchange
+    container_name: cryptodvala-postgresql-matcher
     ports:
       - '5432:5432'
     environment:
@@ -25,7 +25,7 @@ services:
   redis:
     image: redis:latest
     restart: always
-    container_name: cryptodvala-redis-exchange
+    container_name: cryptodvala-redis-matcher
     ports:
       - '6379:6379'
     environment:

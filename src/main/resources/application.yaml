@@ -1,9 +1,5 @@
 spring:
   application:
-    name: cryptodvala-exchange-service
+    name: cryptodvala-matcher-service
   profiles:
-    active: ${ACTIVE_PROFILE}:dev
-  boot:
-    admin:
-      client:
-        url: ${ADMIN_URL}
+    active: ${ACTIVE_PROFILE}
