@@ -22,7 +22,7 @@ spring:
 management:
   endpoints:
     web:
-      base-path: /actuator/exchange-service
+      base-path: /actuator/matcher-service
       exposure:
         include: '*'
   endpoint:
