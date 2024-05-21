@@ -1,11 +1,11 @@
-package com.cryptodvala.matcher.exchanger;
+package com.cryptodvala.matcher.navigator;
 
 import com.cryptodvala.matcher.filter.KlineFilter;
 
 import java.util.List;
 
-public interface KlineFilterExchanger {
+public interface KlineFilterNavigator {
     List<KlineFilter> getKlineFilters();
 
-    void process();
+    void navigate();
 }
